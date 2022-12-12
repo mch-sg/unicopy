@@ -1,0 +1,142 @@
+/*  ROOT  */ 
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Raleway:wght@300;400;500;600&display=swap');
+
+:root {
+    --add: #929da6;
+    --sekclr: #DDDDDDAA;
+    --hclr: #DEE3EA;
+    --minclr: #0B0B0D; // #141618 // #d1b3c4 // #0B0B0D // #101113
+    --primclr: #656E75; // #e0d2ea
+    --bclr: #0000006F;
+    --b: #000000;
+    --dim: #FFFFFF2C; // #00000041
+}
+
+* {
+    margin-bottom: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+hr {
+    border: 1px solid #FFFFFF0C;
+    width: 100%;
+    margin-bottom: 75px;
+}
+
+/*  PRIMARY  */ 
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--b); 
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 65px;
+    color: var(--hclr);
+    padding-top: 5px;
+}
+
+h2, a, p {
+    text-align: center;
+    align-items: center;
+    font-weight: 300;
+    font-size: 17px;
+    color: var(--sekclr); // #0000006F
+}
+
+h2 {
+    display: flex;
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: var(--sekclr); // #0000006F
+}
+
+p a  {
+    color: var(--add);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+p a:hover {
+    color: #656E75;
+    opacity: 1;
+}
+
+small {
+    color: var(--sekclr);
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.card-body-col-item {
+    color: white;
+}
+
+.mt {
+    margin-top: 50px;
+}
+
+
+.card-body-col-item {
+    transition: 0.2s;
+    position: relative;
+    background-color: var(--hclr);
+    color: #04070c;
+    display: flex;
+    vertical-align: middle;
+    border-radius: 5px;
+
+    margin: 10px;
+    padding: 1px;
+    height: 85px;
+    width: 85px;
+    line-height:1.1;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 2.5rem;
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card-body-col-item:hover{
+    background-color:var(--add);
+}
+
+
+.container {
+    text-align: center;
+    display: inline-block;
+    padding: 5px;
+    position: relative;
+    margin-bottom: 60px;
+    margin-right: 90px;
+    margin-top: 35px;
+    height: 100%;
+    width: 500px;
+    
+    cursor: pointer;
+}  
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    font-display: none;
+}
