@@ -7,3 +7,10 @@ function copyToClipboard(value) {
     console.log(value);
 }
 
+
+let copyText = document.querySelector(".copyText");
+
+copyText.querySelector("button").addEventListener("click", function() {
+    let input = copyText.querySelector("input.text");
+    copyToClipboard(input.value);
+});
