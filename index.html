@@ -5,8 +5,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/pageload.css">
-    <link rel="stylesheet" href="css/preloader.css">
-    <script src="scripts/script.js"></script>
+    <script src="scripts/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,7 +30,7 @@
 
     <!-- <link href="https://i.imgur.com/93xMaAY.png" rel="shortcut icon"> -->
 </head>
-<body>
+<body onload="check()">
 
 <div id="preloader" class="loader"></div>
 
@@ -39,8 +39,11 @@
         <h1>Unicopy</h1>
         <p style="margin-top: 10px;">by <a href="https://magnushvidtfeldt.com" target="_blank">Magnus Hvidtfeldt</a>
         <p>Copy unicode characters and symbols!<br> Suggestions? <a href="https://twitter.com/hvidtfldt" target="_blank">Tweet me.<br><br></a></p>
-        <small>Left click to copy the unicode character.</small>
+        <small>Left click to copy the unicode character.<br><br></small>
+
+        
     </div>
+    <i class="bi bi-brightness-high-fill bri" id="toggleLight"></i>
 </header>
 
 <main class="align">
