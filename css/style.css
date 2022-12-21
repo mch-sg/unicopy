@@ -160,11 +160,12 @@ small {
 
 .card-body-col-item:hover {
   background-color: var(--add);
+  transform: scale(0.99);
 }
 
 .card-body-col-item:active {
   background-color: #56d1a2;
-  transform: scale(0.95);
+  transform: scale(0.93);
 }
 
 .container {
