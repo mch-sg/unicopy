@@ -1,0 +1,38 @@
+/*  SCREEN ADJUSTMENTS   */
+
+@media only screen and (max-width: 812px) {
+  .card-body-col-item {
+    border-radius: 10px;
+
+    margin: 10px;
+    height: 75px;
+    width: 75px;
+
+    font-family: "Inter", sans-serif !important;
+    font-size: 1.5rem;
+
+    line-height: 75px;
+  }
+
+  .container {
+    padding: 0px;
+    max-width: 700px;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .card-body-col-item {
+    margin: 15px;
+    width: 100px;
+
+    font-family: "Inter", sans-serif !important;
+    font-size: 2rem;
+
+    line-height: 100px;
+  }
+
+  .container {
+    padding: 0px;
+    max-width: 900px;
+  }
+}

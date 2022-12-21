@@ -3,6 +3,7 @@
 <head>
     <title>Unicopy</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <script src="scripts/script.js"></script>
 
     <meta charset="UTF-8">
@@ -29,37 +30,58 @@
 </head>
 <body>
     <header>
-        <h1>Unicopy</h1>
-        <p style="margin-top: 10px;">by <a href="https://magnushvidtfeldt.com" target="_blank">Magnus Hvidtfeldt</a>
-        <p>Copy unicode characters and symbols!<br> Suggestions? <a href="https://twitter.com/hvidtfldt" target="_blank">Tweet me.<br><br></a></p>
-        <small>Left click to copy the unicode character.</small>
+        <div class="aalign">
+            <h1>Unicopy</h1>
+            <p style="margin-top: 10px;">by <a href="https://magnushvidtfeldt.com" target="_blank">Magnus Hvidtfeldt</a>
+            <p>Copy unicode characters and symbols!<br> Suggestions? <a href="https://twitter.com/hvidtfldt" target="_blank">Tweet me.<br><br></a></p>
+            <small>Left click to copy the unicode character.</small>
+        </div>
     </header>
 
-    <main>
+    <main class="align">
 
-    <div class="card-header mt">
-        <h2>Arrows</h2>
+    <div class="card-header mt align">
+        <h2 style="text-align: center;align-content: center;">Arrows</h2>
     </div>
-    <ul class="container">
-        <div>
-            <div>
-                <div class="card-body-col-item" onclick="copyToClipboard('&#8605;')">&#8605;</div>
+    <ul class="container card-header">
+        <li class="post-content">
+            <div class="align">
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8592;')">&#8592;</div>
                 <div class="card-body-col-item" onclick="copyToClipboard('&#8593;')">&#8593;</div>
                 <div class="card-body-col-item" onclick="copyToClipboard('&#8594;')">&#8594;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8595;')">&#8595;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8596;')">&#8596;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8597;')">&#8597;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8598;')">&#8598;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8599;')">&#8599;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8600;')">&#8600;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8601;')">&#8601;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8602;')">&#8602;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8603;')">&#8603;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8604;')">&#8604;</div>
                 <div class="card-body-col-item" onclick="copyToClipboard('&#8605;')">&#8605;</div>
-
-                <div class="card-body-col-item" onclick="copyToClipboard('&#8593;')">&#8593;</div>
-                <div class="card-body-col-item" onclick="copyToClipboard('&#8594;')">&#8594;</div>
-                <div class="card-body-col-item" onclick="copyToClipboard('&#8605;')">&#8605;</div>
-                <div class="card-body-col-item" onclick="copyToClipboard('&#8593;')">&#8593;</div>
-
-                <div class="card-body-col-item" onclick="copyToClipboard('&#8594;')">&#8594;</div>
-                <div class="card-body-col-item" onclick="copyToClipboard('&#8605;')">&#8605;</div>
-                <div class="card-body-col-item" onclick="copyToClipboard('&#8593;')">&#8593;</div>
-                <div class="card-body-col-item" onclick="copyToClipboard('&#8594;')">&#8594;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8606;')">&#8606;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8607;')">&#8607;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8608;')">&#8608;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8609;')">&#8609;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8610;')">&#8610;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8611;')">&#8611;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8612;')">&#8612;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8613;')">&#8613;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8614;')">&#8614;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8615;')">&#8615;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8616;')">&#8616;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8617;')">&#8617;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8618;')">&#8618;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8619;')">&#8619;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8620;')">&#8620;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8621;')">&#8621;</div>
+                <!-- <div class="card-body-col-item" onclick="copyToClipboard('&#8622;')">&#8622;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8623;')">&#8623;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8624;')">&#8624;</div> -->
             </div>
 
-        </div>
+        </li>
     </ul>
 
 
@@ -67,8 +89,21 @@
         <h2>Circles</h2>
     </div>
     <ul class="container">
-        <div class="card-body-col-item" onclick="copyToClipboard('&#8605;')">&#8605;</div>
-        <div class="card-body-col-item" onclick="copyToClipboard('&#8593;')">&#8593;</div>
+        <li class="post-content">
+            <div class="align">
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8605;')">&#8605;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8593;')">&#8593;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8594;')">&#8594;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8605;')">&#8605;</div>
+
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8593;')">&#8593;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8594;')">&#8594;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8605;')">&#8605;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&#8593;')">&#8593;</div>
+                
+            </div>
+
+        </li>
     </ul>
 
 
@@ -76,7 +111,9 @@
 
 
     <footer>
-        <!-- <small>Left click to copy the unicode character.</small> -->
+        <small>
+            Left click to copy the unicode character.
+        </small>
     </footer>
     
 </body>
