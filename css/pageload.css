@@ -1,16 +1,5 @@
 /*  EXTRA ADD-ONS */
 
-::-moz-selection {
-  /* Code for Firefox */
-  /* color: var(--hclr); */
-  /* background: var(--add); */
-}
-
-::selection {
-  /* color: var(--add); */
-  /* background: #3A3152; */
-}
-
 body {
   -user-select: none;
   -moz-user-select: none;
