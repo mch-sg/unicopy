@@ -128,7 +128,7 @@ small {
 
   /* margin-right: 25px;
   margin-bottom: 25px; */
-  margin: 10px;
+  margin: 15px;
   height: 100px;
   width: 100px;
 
@@ -175,7 +175,7 @@ small {
 
   height: 100%;
   /* width: 700px; */
-  max-width: 800px;
+  max-width: 900px;
 }
 
 .container input {
