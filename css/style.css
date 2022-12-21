@@ -3,10 +3,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Raleway:wght@300;400;500;600&display=swap");
 
 :root {
+  --borderclr: #ffffff15;
+  --dimlink: #37383a;
   --add: #232325; /*#929da6   #8a949c  --  #4a4b4d*/
   --headadd: #4a4b4d;
   --sekclr: #ddddddaa;
-  --hclr: #dee3ea;
+  --hclr: #e0e0e0;
   --minclr: #0b0b0d; // #141618 // #d1b3c4 // #0B0B0D // #101113
   --primclr: #656e75; // #e0d2ea
   --bclr: #0000006f;
@@ -32,13 +34,14 @@
 
 hr {
   border: 1px solid #ffffff0c;
-  width: 100%;
+  width: 50%;
   margin-bottom: 75px;
 }
 
 /*  PRIMARY  */
 
 body {
+  overflow-x: hidden;
   font-family: "Inter", sans-serif;
   background-color: var(--b);
   margin: 0;
@@ -95,7 +98,7 @@ p a {
 }
 
 p a:hover {
-  color: #999da0;
+  color: #a0a0a0;
   opacity: 1;
 }
 
@@ -197,10 +200,12 @@ li {
 
 footer {
   /* position: fixed; */
-
   width: 100%;
+  overflow: hidden;
+  /* padding: 5rem; */
   margin-top: auto;
-  border-top: 1px solid white;
+  /* border-top: 1px solid var(--borderclr); */
+  padding-bottom: 3rem;
 }
 
 .copy {
@@ -210,4 +215,12 @@ footer {
   color: var(--dim);
   margin-right: auto;
   /* float: left; */
+}
+
+.footer {
+  font-family: "Inter", sans-serif;
+}
+
+.headadd {
+  color: var(--dimlink);
 }

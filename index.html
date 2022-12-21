@@ -4,6 +4,8 @@
     <title>Unicopy</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/pageload.css">
+    <link rel="stylesheet" href="css/preloader.css">
     <script src="scripts/script.js"></script>
 
     <meta charset="UTF-8">
@@ -29,20 +31,49 @@
     <!-- <link href="https://i.imgur.com/93xMaAY.png" rel="shortcut icon"> -->
 </head>
 <body>
-    <header>
-        <div class="aalign">
-            <h1>Unicopy</h1>
-            <p style="margin-top: 10px;">by <a href="https://magnushvidtfeldt.com" target="_blank">Magnus Hvidtfeldt</a>
-            <p>Copy unicode characters and symbols!<br> Suggestions? <a href="https://twitter.com/hvidtfldt" target="_blank">Tweet me.<br><br></a></p>
-            <small>Left click to copy the unicode character.</small>
-        </div>
-    </header>
+
+<div id="preloader" class="loader"></div>
+
+<header>
+    <div class="aalign">
+        <h1>Unicopy</h1>
+        <p style="margin-top: 10px;">by <a href="https://magnushvidtfeldt.com" target="_blank">Magnus Hvidtfeldt</a>
+        <p>Copy unicode characters and symbols!<br> Suggestions? <a href="https://twitter.com/hvidtfldt" target="_blank">Tweet me.<br><br></a></p>
+        <small>Left click to copy the unicode character.</small>
+    </div>
+</header>
 
 <main class="align">
+
+    <div class="card-header mt">
+        <h2>Copyright & Commons</h2>
+    </div>
+
+    <ul class="container">
+        <li class="post-content">
+            <div class="align">
+                <div class="card-body-col-item" onclick="copyToClipboard('&lt;')">&lt;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&gt;')">&gt;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&sol;')">&sol;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&quot;')">&quot;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&apos;')">&apos;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&amp;')">&amp;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&copy;')">&copy;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&reg;')">&reg;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&deg;')">&deg;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&laquo;')">&laquo;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&raquo;')">&raquo;</div>
+                <div class="card-body-col-item" onclick="copyToClipboard('&nbsp;')">&nbsp;</div>
+            </div>
+        </li>
+    </ul>
+
+    <hr>
 
     <div class="card-header mt align">
         <h2 style="text-align: center;align-content: center;">Arrows</h2>
     </div>
+
     <ul class="container">
         <li class="post-content">
             <div class="align">
@@ -183,10 +214,12 @@
         </li>
     </ul>
 
+    <hr>
 
     <div class="card-header mt">
         <h2>Circles</h2>
     </div>
+
     <ul class="container">
         <li class="post-content">
             <div class="align">
@@ -201,41 +234,28 @@
     
 
 
-    <div class="card-header mt">
-        <h2>Copyright & Commons</h2>
-    </div>
-    <ul class="container">
-        <li class="post-content">
-            <div class="align">
-                <div class="card-body-col-item" onclick="copyToClipboard('&lt;')">&lt;</div>
-                <div class="card-body-col-item" onclick="copyToClipboard('&gt;')">&gt;</div>
-                <div class="card-body-col-item" onclick="copyToClipboard('&sol;')">&sol;</div>
-                <div class="card-body-col-item" onclick="copyToClipboard('&quot;')">&quot;</div>
-                <div class="card-body-col-item" onclick="copyToClipboard('&apos;')">&apos;</div>
-                <div class="card-body-col-item" onclick="copyToClipboard('&amp;')">&amp;</div>
-                <div class="card-body-col-item" onclick="copyToClipboard('&copy;')">&copy;</div>
-                <div class="card-body-col-item" onclick="copyToClipboard('&reg;')">&reg;</div>
-                <div class="card-body-col-item" onclick="copyToClipboard('&deg;')">&deg;</div>
-                <div class="card-body-col-item" onclick="copyToClipboard('&laquo;')">&laquo;</div>
-                <div class="card-body-col-item" onclick="copyToClipboard('&raquo;')">&raquo;</div>
-                <div class="card-body-col-item" onclick="copyToClipboard('&nbsp;')">&nbsp;</div>
-
-
-            </div>
-        </li>
-    </ul>
-
 </main>
 
 
-    <!-- <footer class="footer">
-        <small>
-            Left click to copy the unicode character.
-        </small>
-
-        <p class="copy">© Memento by <a href="https://magnushvidtfeldt.com" target="_blank"> Magnus Hvidtfeldt</a></p>
-    </footer>
-     -->
+<footer class="footer">
+    <p class="copy">
+        2022 © Unicopy by 
+        <a class="headadd" href="https://magnushvidtfeldt.com" target="_blank"> Magnus Hvidtfeldt</a>
+    </p>
+</footer>
+    
 </body>
+
+<script>
+    window.addEventListener('load', function() {
+        setTimeout(() => {
+        document.querySelector('.loader').classList.add('loader--hidden');
+        }, 500)
+
+        document.querySelector('.loader').addEventListener('transitionend', function() {
+            document.querySelector('.loader').style.display = 'none';
+        })
+    });
+</script>
 </html>
 
