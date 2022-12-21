@@ -178,7 +178,7 @@ small {
 .card-body-col-item:hover {
   background-color: var(--cardhover);
   transform: scale(0.99);
-  border-radius: 12px;
+  /* border-radius: 12px; */
 }
 
 .card-body-col-item:active {
