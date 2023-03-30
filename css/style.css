@@ -7,7 +7,7 @@
 :root {
   --borderclr: #ffffff0c;
   --cardborder: #ffffff0a;
-  --cards: #101010;
+  --cards: #131313;
   --cardhover: #232325;
   --dimlink: #37383a;
   --loaderclr: #ffffff2c;
@@ -15,10 +15,10 @@
   --headadd: #4a4b4d;
   --sekclr: #ddddddaa;
   --hclr: #e0e0e0;
-  --minclr: #0b0b0d; // #141618 // #d1b3c4 // #0B0B0D // #101113
+  --minclr: #171717; // #141618 // #d1b3c4 // #0B0B0D // #101113
   --primclr: #656e75; // #e0d2ea
   --bclr: #0000006f;
-  --b: #000000;
+  --b: #070707;
   --dim: #ffffff6f; // #00000041
 }
 
@@ -106,7 +106,7 @@ a {
 
 h2 {
   display: flex;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 25px;
   margin-bottom: 25px;
   color: var(--sekclr); // #0000006F
