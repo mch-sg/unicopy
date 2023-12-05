@@ -7,7 +7,7 @@
 :root {
   --borderclr: #ffffff0c;
   --cardborder: #ffffff0a;
-  --cards: #131313;
+  --cards: #171717;
   --cardhover: #232325;
   --dimlink: #37383a;
   --loaderclr: #ffffff2c;
@@ -261,7 +261,7 @@ footer {
 
 /* preloader */
 #preloader {
-  background-color: var(--b);
+  background-color: #101010;
   height: 100%;
   width: 100%;
   position: fixed;
@@ -281,14 +281,14 @@ footer {
 .loader::after {
   content: "";
   display: block;
-  width: 85px;
-  height: 85px;
-  border: 4px solid var(--loaderclr);
+  width: 60px;
+  height: 60px;
+  border: 3px solid var(--loaderclr);
   border-top-color: var(--hclr);
   border-radius: 50%;
   /* background: #fff; */
   margin: 8px;
-  animation: loading 0.75s infinite linear;
+  animation: loading 0.55s infinite linear;
 }
 
 @keyframes loading {

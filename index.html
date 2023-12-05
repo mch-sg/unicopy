@@ -28,7 +28,7 @@
 
     <link href="assets/favicon.svg" rel="shortcut icon">
 </head>
-<body>
+<body style="background:#101010">
 
 <div id="preloader" class="loader"></div>
 
@@ -301,7 +301,7 @@
     window.addEventListener('load', function() {
         setTimeout(() => {
         document.querySelector('.loader').classList.add('loader--hidden');
-        }, 0)
+        }, 25)
 
         document.querySelector('.loader').addEventListener('transitionend', function() {
             document.querySelector('.loader').style.display = 'none';
